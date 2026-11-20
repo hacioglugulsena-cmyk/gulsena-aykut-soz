@@ -1,0 +1,199 @@
+
+
+<!DOCTYPE html>
+
+<html lang="tr">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Gülsena & Aykut | Söz Davetiyesi</title>
+
+<style>
+
+*{box-sizing:border-box}
+
+body{
+
+ margin:0;min-height:100vh;display:flex;align-items:center;
+
+ justify-content:center;padding:25px 16px;
+
+ color:#715b46;font-family:Georgia,serif;
+
+ background:linear-gradient(120deg,#d9c3a4,#fff8eb,#e6d3b6,#fff9ef);
+
+ background-size:300% 300%;animation:satin 12s ease infinite;
+
+}
+
+@keyframes satin{50%{background-position:100% 50%}}
+
+body:before{
+
+ content:"";position:fixed;inset:0;pointer-events:none;
+
+ background:repeating-linear-gradient(110deg,transparent 0 35px,#ffffff65 50px,transparent 75px,#b99b7440 105px);
+
+ filter:blur(10px)
+
+}
+
+main{width:100%;max-width:440px;position:relative;z-index:1;text-align:center}
+
+.intro{font:10px Arial;letter-spacing:4px;margin-bottom:25px;color:#927b61}
+
+.envelope{height:270px;position:relative;cursor:pointer;
+
+ background:linear-gradient(135deg,#fff5e5,#d8bd96,#fff8eb);
+
+ box-shadow:0 20px 45px #80664d45;overflow:hidden}
+
+.envelope:before{content:"";position:absolute;inset:0;
+
+ background:linear-gradient(145deg,transparent 48%,#c9ad84 49%,#f8ead5 51%,transparent 52%),
+
+ linear-gradient(35deg,transparent 48%,#d2b790 49%,#fff3df 51%,transparent 52%)}
+
+.flap{position:absolute;inset:0;background:linear-gradient(130deg,#e4cfad,#fff5e5,#cdb18a);
+
+ clip-path:polygon(0 0,100% 0,50% 58%);transform-origin:top;transition:1s;z-index:2}
+
+.seal{position:absolute;z-index:3;top:52%;left:50%;transform:translate(-50%,-50%);
+
+ width:48px;height:48px;border-radius:50%;display:grid;place-items:center;
+
+ background:linear-gradient(135deg,#fff5e5,#c3a477,#fff3df);color:#806747}
+
+.letter{position:absolute;inset:15px;background:#fff9ef;
+
+ display:flex;align-items:center;justify-content:center;flex-direction:column}
+
+.letter small{letter-spacing:4px;font:10px Arial;color:#a88b65}
+
+.letter strong{font-size:30px;font-weight:normal;margin:15px}
+
+.hint{font:10px Arial;letter-spacing:3px;margin:20px;color:#927b61}
+
+.card{display:none;background:linear-gradient(125deg,#fff9ef,#ead8bb,#fff8eb);
+
+ padding:45px 25px;border:1px solid #cbb18a;box-shadow:0 20px 50px #80664d30}
+
+.open .envelope{display:none}
+
+.open .intro,.open .hint{display:none}
+
+.open .card{display:block;animation:appear 1s}
+
+@keyframes appear{from{opacity:0;transform:translateY(25px)}to{opacity:1;transform:none}}
+
+.line{width:60px;height:1px;background:#b99a69;margin:20px auto}
+
+.small{font:10px Arial;letter-spacing:4px;color:#a18766}
+
+h1{font-size:48px;font-weight:normal;line-height:1.2;margin:22px 0;color:#71583f}
+
+.amp{font-style:italic;font-size:28px;color:#b99a69}
+
+.message{font-size:16px;line-height:1.9;margin:25px 0}
+
+.date{font-size:25px;letter-spacing:3px}
+
+.time{font-size:19px;margin:12px}
+
+.venue{font-size:21px;margin-top:22px}
+
+.place{font:10px Arial;letter-spacing:3px;margin-top:10px;color:#927b61}
+
+a{display:inline-block;margin-top:25px;padding:13px 22px;
+
+ background:#92744e;color:white;text-decoration:none;
+
+ font:10px Arial;letter-spacing:2px}
+
+</style>
+
+</head>
+
+<body>
+
+<main id="page">
+
+ <div class="intro">SİZİ GÜZEL BİR ANIYA DAVET EDİYORUZ</div>
+
+ <div class="envelope" onclick="openInvite()">
+
+  <div class="letter">
+
+   <small>SÖZ DAVETİYESİ</small>
+
+   <strong>Gülsena <span class="amp">&</span> Aykut</strong>
+
+   <small>19 · 12 · 2026</small>
+
+  </div>
+
+  <div class="flap"></div>
+
+  <div class="seal">G & A</div>
+
+ </div>
+
+ <div class="hint">ZARFI AÇMAK İÇİN DOKUNUN</div>
+
+ <section class="card">
+
+  <div class="line"></div>
+
+  <div class="small">SÖZ DAVETİYESİ</div>
+
+  <h1>Gülsena<br><span class="amp">&</span><br>Aykut</h1>
+
+  <div class="message">
+
+   Hayatımızın bu güzel başlangıcında<br>
+
+   mutluluğumuzu paylaşmanız dileğiyle...<br><br>
+
+   <strong>Sözümüze davetlisiniz.</strong>
+
+  </div>
+
+  <div class="line"></div>
+
+  <div class="date">19 · 12 · 2026</div>
+
+  <div class="time">Cumartesi · 14:00</div>
+
+  <div class="line"></div>
+
+  <div class="venue">Can Davet Evi</div>
+
+  <div class="place">ÇUMRA / KONYA</div>
+
+  <a href="https://www.google.com/maps/search/?api=1&query=Can+Davet+Evi+Çumra+Konya" target="_blank">KONUMU GÖR</a>
+
+  <div class="line"></div>
+
+  <div class="small">SİZLERİ ARAMIZDA GÖRMEKTEN MUTLULUK DUYARIZ</div>
+
+ </section>
+
+</main>
+
+<script>
+
+function openInvite(){
+
+ document.getElementById("page").classList.add("open");
+
+}
+
+</script>
+
+</body>
+
+</html>
