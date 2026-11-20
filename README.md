@@ -1,0 +1,1 @@
+# gulsena-aykut-soz
